@@ -36,6 +36,7 @@ public class SignUpActivitiy extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ButterKnife.inject(SignUpActivitiy.this);
+
         //Set click listener here
         setListner();
         //End
