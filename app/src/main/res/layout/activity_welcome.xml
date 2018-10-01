@@ -205,7 +205,7 @@
                 android:layout_weight="1">
                 <LinearLayout
                     android:layout_width="220dp"
-                    android:layout_height="40dp"
+                    android:layout_height="42dp"
                     android:background="@drawable/bg_facebook"
                     android:gravity="center">
                     <ImageView
@@ -224,7 +224,7 @@
                 android:layout_weight="1">
                 <LinearLayout
                     android:layout_width="220dp"
-                    android:layout_height="40dp"
+                    android:layout_height="42dp"
                     android:background="@drawable/bg_google"
                     android:gravity="center">
                     <ImageView

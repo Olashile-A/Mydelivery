@@ -11,55 +11,53 @@ import android.widget.Toast;
 import com.hbb20.CountryCodePicker;
 import com.mydelivery.R;
 import com.mydelivery.helper.CustomEditTextMedium;
-import com.mydelivery.login.LoginActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class WelcomeActivitiy extends AppCompatActivity implements View.OnClickListener {
-    CountryCodePicker ccp;
-    private String countrySelectedCode;
-    @InjectView(R.id.mobile_no)
-    CustomEditTextMedium mobileCustomEditTextMedium;
-    @InjectView(R.id.layEnter)
-    LinearLayout enterLinearLayout;
+public class ForgotActivitiy extends AppCompatActivity implements View.OnClickListener {
+    @InjectView(R.id.etPhone)
+    CustomEditTextMedium phoneCustomEditTextMedium;
+    @InjectView(R.id.layCancel)
+    LinearLayout cancelLinearLayout;
+    @InjectView(R.id.layRequest)
+    LinearLayout requestLinearLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
-        ButterKnife.inject(WelcomeActivitiy.this);
-
-        ccp = (CountryCodePicker) findViewById(R.id.ccp);
+        setContentView(R.layout.activity_forgot);
+        ButterKnife.inject(ForgotActivitiy.this);
         //Set click listener here
         setListner();
         //End
     }
 
     private void setListner() {
-        countrySelectedCode = ccp.getSelectedCountryCode();
-
-        enterLinearLayout.setOnClickListener(this);
+        cancelLinearLayout.setOnClickListener(this);
+        requestLinearLayout.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.layEnter:
-                if (mobileCustomEditTextMedium.length() == 0) {
+            case R.id.layRequest:
+                if (phoneCustomEditTextMedium.length() == 0) {
                     Toast.makeText(this, "Please Enter your Phone number", Toast.LENGTH_SHORT).show();
                 } else {
                     postData();
                 }
                 break;
+            case R.id.layCancel:
+                finish();
+                break;
         }
     }
 
     private void postData() {
-        countrySelectedCode = ccp.getSelectedCountryCode();
-        Intent enterMobileIntent= new Intent(WelcomeActivitiy.this,EnterOtpActivity.class);
-        enterMobileIntent.putExtra("mobile_number",mobileCustomEditTextMedium.getText().toString());
-        enterMobileIntent.putExtra("otp_value","0");
+        Intent enterMobileIntent = new Intent(ForgotActivitiy.this, EnterOtpActivity.class);
+        enterMobileIntent.putExtra("mobile_number", phoneCustomEditTextMedium.getText().toString());
+        enterMobileIntent.putExtra("otp_value", "1");
         startActivity(enterMobileIntent);
     }
 }

@@ -23,12 +23,13 @@ import android.widget.LinearLayout;
 import com.mydelivery.R;
 import com.mydelivery.fragment.HomeFragment;
 import com.mydelivery.helper.CustomTextMedium;
+import com.mydelivery.helper.CustomTextMediumBold;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class DrawerActivity extends AppCompatActivity {
+public class DrawerActivity extends AppCompatActivity implements View.OnClickListener{
     FragmentManager fragmentManager;
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
     @InjectView(R.id.drawer_layout)
@@ -37,16 +38,22 @@ public class DrawerActivity extends AppCompatActivity {
     Toolbar toolbar;
     @InjectView(R.id.toolbar_title)
     CustomTextMedium toolTitle;
-    @InjectView(R.id.layHome)
-    LinearLayout homeLinearLayout;
+    @InjectView(R.id.layBookDelivery)
+    LinearLayout bookDelivery;
     @InjectView(R.id.user_text)
-    CustomTextMedium usernameTextView;
-    @InjectView(R.id.layRate)
-    LinearLayout rateLinearLayout;
+    CustomTextMediumBold usernameTextView;
+    @InjectView(R.id.layYourDelivery)
+    LinearLayout yourDelivery;
     @InjectView(R.id.layDraweHeader)
     LinearLayout layDraweHeader;
-    @InjectView(R.id.layShare)
-    LinearLayout shareLinearLayout;
+    @InjectView(R.id.layPaymenyMethod)
+    LinearLayout paymentMethod;
+    @InjectView(R.id.layMerhcantlist)
+    LinearLayout merhcantlist;
+    @InjectView(R.id.layPromotions)
+    LinearLayout promotionsLayout;
+    @InjectView(R.id.layPush)
+    LinearLayout pushLinearLayout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,42 +101,12 @@ public class DrawerActivity extends AppCompatActivity {
      * Listeners
      */
     public void setListeners() {
-        layDraweHeader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mDrawerLayout.closeDrawer(Gravity.START);
-            }
-        });
-        homeLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                HomeFragment homeFragment = new HomeFragment();
-                inflateFragment(homeFragment);
-            }
-        });
-
-
-        rateLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.roadtraffic.signsindia"));
-                startActivity(i);
-            }
-        });
-
-
-        shareLinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                String shareBodyText = "Take a look at this amazing app: https://play.google.com/store/apps/details?id=com.roadtraffic.signsindia";
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject/Title");
-                intent.putExtra(Intent.EXTRA_TEXT, shareBodyText);
-                startActivity(Intent.createChooser(intent, "Share with"));
-            }
-        });
+        layDraweHeader.setOnClickListener(this);
+        yourDelivery.setOnClickListener(this);
+        paymentMethod.setOnClickListener(this);
+        merhcantlist.setOnClickListener(this);
+        promotionsLayout.setOnClickListener(this);
+        pushLinearLayout.setOnClickListener(this);
     }
 
 
@@ -206,6 +183,26 @@ public class DrawerActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
         mDrawerLayout.closeDrawer(Gravity.START);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.layBookDelivery:
+                break;
+            case R.id.layYourDelivery:
+                break;
+            case R.id.layPaymenyMethod:
+                break;
+            case R.id.layMerhcantlist:
+                break;
+            case R.id.layPromotions:
+                break;
+            case R.id.layPush:
+                break;
+
+        }
     }
 
 

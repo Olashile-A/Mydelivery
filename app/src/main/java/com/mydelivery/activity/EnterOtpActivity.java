@@ -40,7 +40,7 @@ public class EnterOtpActivity extends AppCompatActivity implements View.OnClickL
     CustomEditTextMedium threeEditText;
     @InjectView(R.id.otp_4)
     CustomEditTextMedium fourEditText;
-    String mMobile, text;
+    String mMobile,mOtpValue, text;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,8 +67,15 @@ public class EnterOtpActivity extends AppCompatActivity implements View.OnClickL
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             mMobile = extras.getString("mobile_number");
+            mOtpValue=extras.getString("otp_value");
             //End
-            enterMobileCustomTextMedium.setText("Enter the 4 digit code sent to you at " + mMobile + getResources().getString(R.string.correct_number));
+            if(mOtpValue.equals("1")){
+                enterMobileCustomTextMedium.setText("Enter the 4 digit code sent to you at " + mMobile);
+
+            }
+            else {
+                enterMobileCustomTextMedium.setText("Enter the 4 digit code sent to you at " + mMobile + getResources().getString(R.string.correct_number));
+            }
         }
     }
 
@@ -103,9 +110,17 @@ public class EnterOtpActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.laySubmit:
-                Intent enterMobileIntent = new Intent(EnterOtpActivity.this, SignUpActivitiy.class);
-                enterMobileIntent.putExtra("mobile_number", mMobile);
-                startActivity(enterMobileIntent);
+                if(mOtpValue.equals("1")){
+                    Intent enterMobileIntent = new Intent(EnterOtpActivity.this, PasswordResetActivitiy.class);
+                    enterMobileIntent.putExtra("mobile_number", mMobile);
+                    startActivity(enterMobileIntent);
+                }
+                else{
+                    Intent enterMobileIntent = new Intent(EnterOtpActivity.this, SignUpActivitiy.class);
+                    enterMobileIntent.putExtra("mobile_number", mMobile);
+                    startActivity(enterMobileIntent);
+                }
+
                 break;
         }
     }

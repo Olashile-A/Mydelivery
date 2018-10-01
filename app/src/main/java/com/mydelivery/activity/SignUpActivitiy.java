@@ -79,6 +79,9 @@ public class SignUpActivitiy extends AppCompatActivity implements View.OnClickLi
     }
 
     private void postData() {
+        Intent enterMobileIntent = new Intent(SignUpActivitiy.this, AgreeActivitiy.class);
+        enterMobileIntent.putExtra("mobile_number", mMobile);
+        startActivity(enterMobileIntent);
         Toast.makeText(this, "Successfully Submit.", Toast.LENGTH_SHORT).show();
     }
 }

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+               >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/icon_agree" />
+
+                <com.mydelivery.helper.CustomTextMediumBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="User Agreement"
+                    android:textColor="@color/color_black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:text="By sigining up, you agree to MYdelivery"
+                    android:textSize="13dp" />
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Term of Service"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <com.mydelivery.helper.CustomTextMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/color_black"
+                android:text="to schools registered under thid platoform and"
+                android:textSize="13dp" />
+            <com.mydelivery.helper.CustomTextMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy."
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp" />
+
+            <com.mydelivery.helper.CustomTextMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:text="You also agree to MyDelivery collecting information from you in order to provide our service. This information includes your name, email, geo-location"
+                android:textSize="13dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+                <com.mydelivery.helper.CustomTextMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and your phone number"
+                    android:textColor="@color/color_black"
+                android:textSize="13dp" />
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learn more"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+      </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:gravity="center">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layAccept"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accept"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layDecline"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decline"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

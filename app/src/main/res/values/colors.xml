@@ -27,4 +27,5 @@
     <color name="color_blaxk_alpha_90">#BF000000</color>
 
     <color name="color_text">#FF535050</color>
+    <color name="color_light">#85e3b5</color>
 </resources>

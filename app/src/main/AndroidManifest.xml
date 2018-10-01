@@ -53,6 +53,23 @@
             android:screenOrientation="portrait"
             android:theme="@style/Splash.Theme"
             android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".activity.AgreeActivitiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash.Theme"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".activity.ForgotActivitiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash.Theme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.PasswordResetActivitiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash.Theme"
+            android:windowSoftInputMode="stateHidden"></activity>
         <!--  <service android:name=".fcm.MyFireBaseInstanceIDService">
               <intent-filter>
                   <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
