@@ -49,7 +49,6 @@ public class EnterOtpActivity extends AppCompatActivity implements View.OnClickL
         ButterKnife.inject(EnterOtpActivity.this);
 
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
