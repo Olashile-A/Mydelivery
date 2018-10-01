@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Delivery</string>
+
+    <string name="correct_number"> <font color='##00c464'>. Did ypu enter the correct mobile number?</font></string>
+</resources>

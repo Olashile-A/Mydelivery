@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/container_toolbar"
+          >
+
+        </FrameLayout>
+         </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/leftDrwaer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/animate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2">
+
+                            <LinearLayout
+                                android:id="@+id/slided_panel"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/layDraweHeader"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingBottom="16dp"
+                                    android:paddingLeft="54dp"
+                                    android:paddingRight="54dp"
+                                    android:paddingTop="16dp">
+                                    <!--       android:layout_weight=".68"-->
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/preImage"
+                                            android:layout_width="60sp"
+                                            android:layout_height="60sp"
+                                            android:layout_centerInParent="true"
+                                            android:src="@mipmap/app_logo"
+                                            app:civ_border_color="@color/color_black" />
+                                    </RelativeLayout>
+
+
+                                    <com.mydelivery.helper.CustomTextMedium
+                                        android:id="@+id/user_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Traffic Signs &amp; Rules"
+                                        android:textColor="#ffffff"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/color_white" />
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:fillViewport="true">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:id="@+id/layHome"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center|start"
+                                            android:padding="10dp">
+
+                                            <ImageView
+                                                android:layout_width="22dp"
+                                                android:layout_height="22dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="7dp"
+                                                android:src="@mipmap/ic_launcher" />
+
+                                            <com.mydelivery.helper.CustomTextMedium
+                                                android:id="@+id/txthome"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="12dp"
+                                                android:text="Home"
+                                                android:textColor="@color/color_white"
+                                                android:textSize="16dp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/layRate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="10dp">
+
+                                            <ImageView
+                                                android:layout_width="22dp"
+                                                android:layout_height="22dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="7dp"
+                                                android:src="@mipmap/ic_launcher" />
+
+                                            <com.mydelivery.helper.CustomTextMedium
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="12dp"
+                                                android:text="Rate App"
+                                                android:textColor="@color/color_white"
+                                                android:textSize="16dp" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/layShare"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="10dp">
+
+                                            <ImageView
+                                                android:layout_width="22dp"
+                                                android:layout_height="22dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="7dp"
+                                                android:src="@mipmap/ic_launcher" />
+
+                                            <com.mydelivery.helper.CustomTextMedium
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="12dp"
+                                                android:text="Share App"
+                                                android:textColor="@color/color_white"
+                                                android:textSize="16dp" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

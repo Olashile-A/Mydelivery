@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MyDelivery.NG"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:orientation="vertical"
+                android:paddingLeft="22dp">
+
+                <com.mydelivery.helper.CustomTextMediumBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome !"
+                    android:textColor="@color/color_black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Just once single app for either you are a rider or a customer. Our process and operation are seamless. Just by interracting with this app your items get delivered to you hassle free"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/bg_edit"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        app:defaultNameCode="IN"
+                        app:keyboardAutoPopOnSearch="false" />
+
+
+                    <com.mydelivery.helper.CustomEditTextMedium
+                        android:id="@+id/mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your Phone number"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layEnter"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_login"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="or"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_facebook"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_facebook" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_google"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_google" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

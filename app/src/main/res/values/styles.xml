@@ -1,0 +1,54 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Splash.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <!--No Action Bar-->
+    <style name="customDialog" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogTheme_alphablack" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/color_blaxk_alpha_90</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/slideDialogAnimation</item>
+    </style>
+    <style name="slideDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_center_dialog</item>
+    </style>
+
+    <!--No Action Bar-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Tooltip">
+        <item name="android:text"></item>
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="backgroundColor">#db1431</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="cornerRadius">2dp</item>
+    </style>
+
+</resources>

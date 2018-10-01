@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MyDelivery.NG"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:orientation="vertical"
+                android:paddingLeft="22dp">
+
+                <com.mydelivery.helper.CustomTextMediumBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signup..."
+                    android:textColor="@color/color_black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Signup to Mydelivery with basic information or use any of your social media link to signup on this platform."
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+               >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_edit"
+                    android:orientation="horizontal">
+
+                    <com.mydelivery.helper.CustomEditTextMedium
+                        android:id="@+id/etFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="First name"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_edit"
+                    android:orientation="horizontal">
+
+                    <com.mydelivery.helper.CustomEditTextMedium
+                        android:id="@+id/etLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Last name"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center|start"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_edit"
+                    android:orientation="horizontal">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:id="@+id/etMobileNumer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="end">
+
+                    <com.mydelivery.helper.CustomTextMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Verified"
+                        android:layout_gravity="end"
+                        android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_edit"
+                    android:orientation="horizontal">
+
+                    <com.mydelivery.helper.CustomEditTextMedium
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_edit"
+                    android:orientation="horizontal">
+
+                    <com.mydelivery.helper.CustomEditTextMedium
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/layEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rectangle"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <com.mydelivery.helper.CustomTextMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signup"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

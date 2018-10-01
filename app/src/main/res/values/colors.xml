@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c464</color>
+    <color name="colorPrimaryDark">#FF4DED9F</color>
+    <color name="colorAccent">#FF152236</color>
+    <color name="layColor">#9c2414</color>
+    <color name="backColor">#bf2e13</color>
+
+    <color name="color_red">#db1431</color>
+    <color name="color_black">#000000</color>
+    <color name="text_opacity">#a9a8b6</color>
+    <color name="admin_color_bg">#e6e6e6</color>
+    <color name="c80_opacity">#808080</color>
+    <color name="color_white">#fff</color>
+
+    <color name="purple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#2980b9</color>
+    <color name="darkpurple">#a569bd</color>
+    <color name="pinky">#fe104d</color>
+    <color name="lightgray">#808080</color>
+    <color name="normal_text">#646464</color>
+    <color name="team_color">#114e67</color>
+
+    <color name="color_tool_fadeblack">#000000</color>
+    <color name="color_blaxk_alpha_90">#BF000000</color>
+
+    <color name="color_text">#FF535050</color>
+</resources>
