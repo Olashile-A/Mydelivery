@@ -79,7 +79,7 @@
                         android:background="@drawable/bg_edit"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:padding="14dp">
+                       >
 
                         <com.mydelivery.helper.CustomEditTextMedium
                             android:id="@+id/etPhone"
@@ -89,6 +89,7 @@
                             android:hint="Enter your Phone number"
                             android:inputType="textPersonName"
                             android:singleLine="true"
+                            android:padding="14dp"
                             android:textColor="@color/color_black"
                             android:textSize="14dp" />
 

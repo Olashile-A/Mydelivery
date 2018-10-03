@@ -24,6 +24,7 @@ import com.mydelivery.R;
 import com.mydelivery.fragment.HomeFragment;
 import com.mydelivery.helper.CustomTextMedium;
 import com.mydelivery.helper.CustomTextMediumBold;
+import com.mydelivery.yourDelivery.YourDeliveryActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -77,6 +78,7 @@ public class DrawerActivity extends AppCompatActivity implements View.OnClickLis
 
         HomeFragment homeFragment = new HomeFragment();
         inflateFragment(homeFragment);
+        //toolbar.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 
         /***Toolbar setup*/
         setUpToolbar();
@@ -192,6 +194,9 @@ public class DrawerActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.layBookDelivery:
                 break;
             case R.id.layYourDelivery:
+                Intent yourDeliveryIntent= new Intent(DrawerActivity.this, YourDeliveryActivity.class);
+                startActivity(yourDeliveryIntent);
+                finish();
                 break;
             case R.id.layPaymenyMethod:
                 break;

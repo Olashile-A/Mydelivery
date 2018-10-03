@@ -50,6 +50,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:15.0.0'
     implementation 'com.roughike:bottom-bar:1.4.0.1'
     implementation 'org.jsoup:jsoup:1.8.3'
+    compile 'com.mukesh:permissions:1.0.4'
+    compile 'com.google.android.gms:play-services-location:15.0.0'
+    compile 'com.google.android.gms:play-services-places:15.0.0'
+
     implementation project(':ccp')
     implementation 'com.google.android.gms:play-services-ads:15.0.0'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'

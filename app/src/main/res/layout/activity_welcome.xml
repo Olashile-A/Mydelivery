@@ -68,10 +68,7 @@
                 android:background="@drawable/bg_edit"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="6dp"
-                android:paddingLeft="12dp"
-                android:paddingRight="12dp"
-                android:paddingTop="6dp">
+                >
 
 
                 <LinearLayout
@@ -87,6 +84,10 @@
                         android:layout_height="wrap_content"
                         android:layout_weight=".40"
                         app:defaultNameCode="IN"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
                         app:keyboardAutoPopOnSearch="false" />
 
 
@@ -99,6 +100,10 @@
                         android:hint="Enter your Phone number"
                         android:inputType="number"
                         android:singleLine="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
                         android:textColor="@color/color_black"
                         android:textSize="14dp" />
 
