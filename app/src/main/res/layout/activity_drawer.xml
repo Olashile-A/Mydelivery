@@ -27,11 +27,10 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/container_toolbar"
-          >
+            android:layout_below="@+id/container_toolbar">
 
         </FrameLayout>
-         </RelativeLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="250dp"
@@ -65,7 +64,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight=".2">
@@ -101,34 +100,36 @@
                                             android:layout_width="60sp"
                                             android:layout_height="60sp"
                                             android:src="@drawable/user"
-                                            app:civ_border_width="1dp"
-                                            app:civ_border_color="@color/color_black" />
+                                            app:civ_border_color="@color/color_black"
+                                            app:civ_border_width="1dp" />
                                     </LinearLayout>
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="vertical"
                                         android:layout_weight="1"
-                                        android:gravity="center|top|start">
+                                        android:gravity="center|top|start"
+                                        android:orientation="vertical">
+
                                         <com.mydelivery.helper.CustomTextMediumBold
                                             android:id="@+id/user_text"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
                                             android:gravity="center"
                                             android:text="Kalyani Choudhary"
                                             android:textColor="@color/color_black"
-                                            android:layout_marginTop="4dp"
-                                            android:textStyle="bold"
-                                            android:textSize="14dp" />
+                                            android:textSize="14dp"
+                                            android:textStyle="bold" />
+
                                         <com.mydelivery.helper.CustomTextMedium
                                             android:id="@+id/txtViewProfile"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:gravity="center"
+                                            android:paddingTop="2dp"
                                             android:text="View Profile"
                                             android:textColor="@color/colorPrimary"
-                                            android:paddingTop="2dp"
                                             android:textSize="16dp" />
                                     </LinearLayout>
                                 </LinearLayout>
@@ -228,6 +229,7 @@
 
 
                                         </LinearLayout>
+
                                         <LinearLayout
                                             android:id="@+id/layMerhcantlist"
                                             android:layout_width="match_parent"
@@ -254,6 +256,7 @@
 
 
                                         </LinearLayout>
+
                                         <LinearLayout
                                             android:id="@+id/layPromotions"
                                             android:layout_width="match_parent"
@@ -280,6 +283,7 @@
 
 
                                         </LinearLayout>
+
                                         <LinearLayout
                                             android:id="@+id/layPush"
                                             android:layout_width="match_parent"
@@ -310,7 +314,70 @@
                                     </LinearLayout>
                                 </ScrollView>
                             </LinearLayout>
-                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/colorPrimary" />
+
+                                <LinearLayout
+                                    android:id="@+id/layBottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="7dp"
+                                        android:src="@mipmap/icon_settings" />
+
+                                    <com.mydelivery.helper.CustomTextMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="12dp"
+                                        android:text="Setting"
+                                        android:textColor="@color/color_black"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="7dp"
+                                        android:src="@mipmap/logout" />
+
+                                    <com.mydelivery.helper.CustomTextMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="12dp"
+                                        android:text="Logout"
+                                        android:textColor="@color/color_black"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -319,4 +386,5 @@
 
         </LinearLayout>
     </LinearLayout>
+
 </android.support.v4.widget.DrawerLayout>
