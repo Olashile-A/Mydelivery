@@ -40,8 +40,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             mapFragment.getMapAsync(new OnMapReadyCallback() {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
-                    double lati = Double.parseDouble(Credentials.getLati(getActivity()));
-                    double longi = Double.parseDouble(Credentials.getLong(getActivity()));
+                    double lati = 0,longi=0;
+                    if(Credentials.getLati(getActivity()).equals("")){
+
+                    }
+                    else {
+                       lati = Double.parseDouble(Credentials.getLati(getActivity()));
+                       longi = Double.parseDouble(Credentials.getLong(getActivity()));
+                    }
                     LatLng latLng = new LatLng(lati, longi);
                     googleMap.addMarker(new MarkerOptions().position(latLng));
                     googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));

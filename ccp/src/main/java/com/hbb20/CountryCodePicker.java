@@ -26,7 +26,7 @@ public class CountryCodePicker extends RelativeLayout {
 
     static String TAG = "CCP";
     static String BUNDLE_SELECTED_CODE = "selectedCode";
-    static int LIB_DEFAULT_COUNTRY_CODE = 91;
+    static int LIB_DEFAULT_COUNTRY_CODE = 235;
     int defaultCountryCode;
     String defaultCountryNameCode;
     Context context;

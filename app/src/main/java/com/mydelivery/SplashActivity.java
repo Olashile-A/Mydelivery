@@ -96,7 +96,7 @@ public class SplashActivity extends AppCompatActivity implements com.google.andr
 
     }
     public void exitSplash() {
-        final int SPLASH_TIME_OUT = 1600;
+        final int SPLASH_TIME_OUT = 2200;
         handler = new Handler();
         runnable = new Runnable() {
             @Override
